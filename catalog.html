@@ -1,100 +1,131 @@
 <!DOCTYPE html>
-  <head>
-    <meta charset="utf-8">
-    <title>Магазин — Дизайн-студия Нёрдс</title>
-  </head>
-  <body>
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
+
+<head>
+  <meta charset="utf-8">
+  <title>Магазин — Дизайн-студия Нёрдс</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo" href="index.html">
         <img src="img/main-logo.svg" width="160" height="67" alt="Логотип дизайн-студии Нёрдс">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="studio.html">Студия</a></li>
-          <li><a href="clients.html">Клиенты</a></li>
-          <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li class="cart-link">Корзина</li>
-        </ul>  
-      </nav>
-      <h1>Магазин готовых шаблонов</h1>  
-    </header>
-    <main class="container">
-      <section class="filters">
-          <h2 class="visually-hidden">Фильтр товаров</h2>
-            <form>
-                <fieldset><legend>Сетка:</legend>
-                <p><input type="radio" name="markup" checked>Адаптивная</input></p>
-                <p><input type="radio" name="markup">Фиксированная</input></p>
-                <p><input type="radio" name="markup">Резиновая</input></p>
-            </fieldset>
-            <fieldset><legend>Особенности:</legend>
-                <p><input type="checkbox" checked>Слайдер</input></p>
-                <p><input type="checkbox">Блок преимуществ</input></p>
-                <p><input type="checkbox" checked>Новости</input></p>
-                <p><input type="checkbox">Галерея</input></p>
-                <p><input type="checkbox">Корзина</input></p>
-            </fieldset>
-            <p><input type="submit" value="Показать"></p>
-            </form>
-      </section>
-      <section class="catalog">
-          <h2 class="visually-hidden">Список товаров</h2>
-          <ul class="catalog-list">
-            <li class="catalog-item">
-                <h3><a href="catalog-item.html">Седона</a></h3>
-                <p>Информационный сайт для туристов</p>
-                <a class="button" href="#">9 900 руб.</a>
-                <img src="img/catalog-item-1.jpg" width="360" height="617" alt="Седона">
-            </li>
-            <li class="catalog-item">
-                    <h3><a href="catalog-item.html">Название-2</a></h3>
-                    <p>Описание-2</p>
-                    <a class="button" href="#">9 900 руб.</a>
-                    <img src="img/catalog-item-2.jpg" width="360" height="617" alt="Название-2">
-                </li>
-                <li class="catalog-item">
-                        <h3><a href="catalog-item.html">Название-3</a></h3>
-                        <p>Описание-3</p>
-                        <a class="button" href="#">9 900 руб.</a>
-                        <img src="img/catalog-item-3.jpg" width="360" height="617" alt="Название-3">
-                    </li>
-                    <li class="catalog-item">
-                            <h3><a href="catalog-item.html">Название-4</a></h3>
-                            <p>Описание-4</p>
-                            <a class="button" href="#">9 900 руб.</a>
-                            <img src="img/catalog-item-4.jpg" width="360" height="617" alt="Название-4">
-                        </li>
-                        <li class="catalog-item">
-                                <h3><a href="catalog-item.html">Название-5</a></h3>
-                                <p>Описание-5</p>
-                                <a class="button" href="#">9 900 руб.</a>
-                                <img src="img/catalog-item-5.jpg" width="360" height="617" alt="Название-5">
-                            </li>
-                            <li class="catalog-item">
-                                    <h3><a href="catalog-item.html">Название-6</a></h3>
-                                    <p>Описание-6</p>
-                                    <a class="button" href="#">9 900 руб.</a>
-                                    <img src="img/catalog-item-6.jpg" width="360" height="617" alt="Название-6">
-                                </li>
-
-
-          </ul>   
-      </section>    
-    </main>
-    <footer class="main-footer">
-      <ul class="footer-social">
-        <li><a class="social-button" href="#">Вконтакте</a>
-        <li><a class="social-button" href="#">Фейсбук</a>
-        <li><a class="social-button" href="#">Инстаграм</a>
-      </ul> 
-      <p class="footer-friends">
-        <b>Давайте дружить, это выгодно!</b></br>
+      </a>
+      <ul class="site-navigation">
+        <li><a href="studio.html">Студия</a></li>
+        <li><a href="clients.html">Клиенты</a></li>
+        <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+      <ul class="user-navigation">
+        <li class="cart-link">Корзина</li>
+      </ul>
+    </nav>
+    <h1>Магазин готовых шаблонов</h1>
+  </header>
+  <main class="container">
+    <section class="filters">
+      <h2 class="visually-hidden">Фильтр товаров</h2>
+      <!--здесь форма-->
+    </section>
+    <section class="catalog">
+      <h2 class="visually-hidden">Список товаров</h2>
+      <ul class="catalog-list">
+        <li class="catalog-item">
+          <div>
+            <!--контейнер для полоски вверху карточки-->
+          </div>
+          <div>
+            <img src="img/catalog-item-1.jpg" width="360" height="617" alt="Седона">
+          </div>
+          <div>
+            <h3><a href="catalog-item.html">Седона</a></h3>
+            <p>Информационный сайт для туристов</p>
+            <a class="button" href="#">9 900 руб.</a>
+          </div>
+        </li>
+        <li class="catalog-item">
+          <div>
+            <!--контейнер для полоски вверху карточки-->
+          </div>
+          <div>
+            <img src="img/catalog-item-2.jpg" width="360" height="617" alt="Седона">
+          </div>
+          <div>
+            <h3><a href="catalog-item.html">Седона</a></h3>
+            <p>Информационный сайт для туристов</p>
+            <a class="button" href="#">9 900 руб.</a>
+          </div>
+        </li>
+        <li class="catalog-item">
+          <div>
+            <!--контейнер для полоски вверху карточки-->
+          </div>
+          <div>
+            <img src="img/catalog-item-3.jpg" width="360" height="617" alt="Седона">
+          </div>
+          <div>
+            <h3><a href="catalog-item.html">Седона</a></h3>
+            <p>Информационный сайт для туристов</p>
+            <a class="button" href="#">9 900 руб.</a>
+          </div>
+        </li>
+        <li class="catalog-item">
+          <div>
+            <!--контейнер для полоски вверху карточки-->
+          </div>
+          <div>
+            <img src="img/catalog-item-4.jpg" width="360" height="617" alt="Седона">
+          </div>
+          <div>
+            <h3><a href="catalog-item.html">Седона</a></h3>
+            <p>Информационный сайт для туристов</p>
+            <a class="button" href="#">9 900 руб.</a>
+          </div>
+        </li>
+        <li class="catalog-item">
+          <div>
+            <!--контейнер для полоски вверху карточки-->
+          </div>
+          <div>
+            <img src="img/catalog-item-5.jpg" width="360" height="617" alt="Седона">
+          </div>
+          <div>
+            <h3><a href="catalog-item.html">Седона</a></h3>
+            <p>Информационный сайт для туристов</p>
+            <a class="button" href="#">9 900 руб.</a>
+          </div>
+        </li>
+        <li class="catalog-item">
+          <div>
+            <!--контейнер для полоски вверху карточки-->
+          </div>
+          <div>
+            <img src="img/catalog-item-6.jpg" width="360" height="617" alt="Седона">
+          </div>
+          <div>
+            <h3><a href="catalog-item.html">Седона</a></h3>
+            <p>Информационный сайт для туристов</p>
+            <a class="button" href="#">9 900 руб.</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <ul class="footer-social">
+      <li><a class="social-button" href="#">Вконтакте</a>
+      <li><a class="social-button" href="#">Фейсбук</a>
+      <li><a class="social-button" href="#">Инстаграм</a>
+    </ul>
+    <div class="footer-friends">
+      <h3>Давайте дружить, это выгодно!</h3>
+      <p>
         Скидка 10% для друзей из социальных сетей.
       </p>
-    </footer>     
+    </div>
+  </footer>
 
-  </body>
+</body>
+
 </html>
