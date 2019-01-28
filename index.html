@@ -1,12 +1,64 @@
 <!DOCTYPE html>
-<html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <title>Дизайн-студия Нёрдс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+        <img src="img/main-logo.svg" width="160" height="67" alt="Логотип дизайн-студии Нёрдс">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="studio.html">Студия</a></li>
+          <li><a href="clients.html">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="cart-link">Корзина</li>
+        </ul>  
+      </nav>  
+    </header>
+    <main class="container">
+      <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
+      <!-- блок со слайдером -->
+      <section class="options">
+      <h2 class="visually-hidden">Виды услуг</h2>
+      <ul class="options-list">
+        <li class="options-item">
+          <h3>Веб-сайты</h3>
+          <img src="img/options-1.jpg" width="300" height="147" alt="Веб-сайты">  
+          <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
+          <a class="button" href="#">Заказать</a>
+        </li>
+        <li class="options-item">
+          <h3>Приложения</h3>
+          <img src="img/options-2.jpg" width="300" height="147" alt="Приложения">  
+          <p>Покорите топ-10 приложеий в AppStore и Google Play</p>
+          <a class="button" href="#">Заказать</a>
+        </li>
+        <li class="options-item">
+          <h3>Презентации</h3>
+          <img src="img/options-3.jpg" width="300" height="147" alt="Веб-сайты">  
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a class="button" href="#">Заказать</a>
+        </li>
+      </ul>  
+      </section>  
+      <!--блок с инфой и картой-->
+    </main>
+    <footer class="main-footer">
+      <ul class="footer-social">
+        <li><a class="social-button" href="#">Вконтакте</a>
+        <li><a class="social-button" href="#">Фейсбук</a>
+        <li><a class="social-button" href="#">Инстаграм</a>
+      </ul> 
+      <p class="footer-friends">
+        <b>Давайте дружить, это выгодно!</b></br>
+        Скидка 10% для друзей из социальных сетей.
+      </p>
+    </footer>     
 
   </body>
 </html>
