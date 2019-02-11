@@ -31,7 +31,11 @@
       <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend>Стоимость:</legend>
-          <input class="filter-price-range" type="range" name="price" id="filter-price" min="1" max="25000" value="15000">
+          <div class="range"><!--див, в котором находятся бегунки и полоска-->
+            <div class="range-tracker"></div><!--див, в котором полоска-->
+              <span class="range-value"></span><!--бегунок-->
+              <span class="range-value"></span>
+          </div>
           <p>
             <label>От <input class="filter-price-value" type="number" name="price-from" id="filter-price-from" value="0"></label>
             <label>До <input class="filter-price-value" type="number" name="price-to" id="filter-price-to" value="15000"></label>
@@ -41,15 +45,15 @@
           <legend>Сетка:</legend>
            <ul>
             <li class="filter-option">
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="layout-type" id="filter-adaptive" checked> 
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" value="adaptive" name="layout-type" id="filter-adaptive" checked> 
               <label for="filter-adaptive">Адаптивная</label> 
             </li>
             <li>
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="layout-type" id="filter-fixed"> 
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" value="fixed" name="layout-type" id="filter-fixed"> 
               <label for="filter-fixed">Фиксированная</label> 
             </li>
             <li>
-              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="layout-type" id="filter-stretch"> 
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" value="stretch" name="layout-type" id="filter-stretch"> 
               <label for="filter-stretch">Резиновая</label> 
             </li> 
            </ul>   
@@ -81,6 +85,17 @@
         </fieldset>
         <button class="button button-filters" type="submit">Показать</button>
       </form>  
+    </section>
+    <section class="sort">
+      <h2 class="visually-hidden">Параметры сортировки</h2>
+      <p class="sort-firstline">Сортировать:</p>
+      <ul>
+        <li class="sort-options sort-options-current"><a href="#">По цене</a></li>
+        <li class="sort-options"><a href="#">По типу</a></li>
+        <li class="sort-options"><a href="#">По названию</a></li>
+        <li class="sort-options-triangle sort-options-current"><a href="#">В прямом порядке</a></li>
+        <li class="sort-options-triangle"><a href="#">В обратном порядке</a></li>
+      </ul>
     </section>
     <section class="catalog">
       <h2 class="visually-hidden">Список товаров</h2>
@@ -209,7 +224,7 @@
         </p>
         <p class="write-us-item">
           <label for="write-us-text">Текст письма:</label>
-          <input type="text" name="text" id="write-us-text" value="" placeholder="В свободной форме">
+          <textarea name="text" id="write-us-text" value="" placeholder="В свободной форме" rows="5"></textarea>
         </p>
         <button class="button button-red" type="submit">Отправить</button>
         <a class="write-us-close" href="#">Закрыть</a>
