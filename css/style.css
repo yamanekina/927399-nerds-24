@@ -171,10 +171,6 @@ a {
     font-size: 45px;
 }
 
-.sup {
-    vertical-align: super;
-}
-
 .about-percents-list,
 .partners-list {
     list-style: none;
@@ -362,7 +358,7 @@ a {
     border-top-right-radius: 5px;
 }
 
-.catalog-item-bar:hover {
+.catalog-item:hover .catalog-item-bar {
     background-color: #4d4d4d;
 }
 
