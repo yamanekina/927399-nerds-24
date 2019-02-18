@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Магазин — Дизайн-студия Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -36,7 +39,7 @@
               <span class="range-value"></span><!--бегунок-->
               <span class="range-value"></span>
           </div>
-          <p>
+          <p class="range-numbers">
             <label>От <input class="filter-price-value" type="number" name="price-from" id="filter-price-from" value="0"></label>
             <label>До <input class="filter-price-value" type="number" name="price-to" id="filter-price-to" value="15000"></label>
           </p>
@@ -109,10 +112,10 @@
           <div>
             <img src="img/catalog-item-1.jpg" width="360" height="577" alt="Седона">
           </div>
-          <div>
-            <h3><a href="catalog-item.html">Седона</a></h3>
+          <div class="catalog-item-info">
+            <h3 class="catalog-item-name"><a href="catalog-item.html">Sedona</a></h3>
             <p>Информационный сайт для туристов</p>
-            <a class="button" href="#">9 900 руб.</a>
+            <a class="button button-red" href="#">9 900 руб.</a>
           </div>
         </li>
         <li class="catalog-item">
@@ -124,10 +127,10 @@
           <div>
             <img src="img/catalog-item-2.jpg" width="360" height="577" alt="Pink-app">
           </div>
-          <div>
-            <h3><a href="catalog-item.html">Pink-app</a></h3>
+          <div class="catalog-item-info">
+            <h3 class="catalog-item-name"><a href="catalog-item.html">Pink-app</a></h3>
             <p>Продуктовый лендинг приложения для iOS и Android</p>
-            <a class="button" href="#">9 900 руб.</a>
+            <a class="button button-red" href="#">9 900 руб.</a>
           </div>
         </li>
         <li class="catalog-item">
@@ -139,10 +142,10 @@
           <div>
             <img src="img/catalog-item-3.jpg" width="360" height="577" alt="Barbershop">
           </div>
-          <div>
-            <h3><a href="catalog-item.html">Barbershop</a></h3>
+          <div class="catalog-item-info">
+            <h3 class="catalog-item-name"><a href="catalog-item.html">Barbershop</a></h3>
             <p>Сайт салона красоты. Для мужчин, да.</p>
-            <a class="button" href="#">9 900 руб.</a>
+            <a class="button button-red" href="#">9 900 руб.</a>
           </div>
         </li>
         <li class="catalog-item">
@@ -154,10 +157,10 @@
           <div>
             <img src="img/catalog-item-4.jpg" width="360" height="577" alt="Mishka">
           </div>
-          <div>
-            <h3><a href="catalog-item.html">Mishka</a></h3>
+          <div class="catalog-item-info">
+            <h3 class="catalog-item-name"><a href="catalog-item.html">Mishka</a></h3>
             <p>Интернет-магазин вязаных игрушек</p>
-            <a class="button" href="#">9 900 руб.</a>
+            <a class="button button-red" href="#">9 900 руб.</a>
           </div>
         </li>
         <li class="catalog-item">
@@ -169,10 +172,10 @@
           <div>
             <img src="img/catalog-item-5.jpg" width="360" height="577" alt="A Plus">
           </div>
-          <div>
-            <h3><a href="catalog-item.html">A Plus</a></h3>
+          <div class="catalog-item-info">
+            <h3 class="catalog-item-name"><a href="catalog-item.html">A Plus</a></h3>
             <p>Лендинг курсов повышения квалификации</p>
-            <a class="button" href="#">9 900 руб.</a>
+            <a class="button button-red" href="#">9 900 руб.</a>
           </div>
         </li>
         <li class="catalog-item">
@@ -184,10 +187,10 @@
           <div>
             <img src="img/catalog-item-6.jpg" width="360" height="577" alt="Кваст">
           </div>
-          <div>
-            <h3><a href="catalog-item.html">Кваст</a></h3>
+          <div class="catalog-item-info">
+            <h3 class="catalog-item-name"><a href="catalog-item.html">Кваст</a></h3>
             <p>Промо-сайт производителя крафтового кваса</p>
-            <a class="button" href="#">9 900 руб.</a>
+            <a class="button button-red" href="#">9 900 руб.</a>
           </div>
         </li>
       </ul>
@@ -201,7 +204,7 @@
     <section class="map">
       <h2 class="visually hidden">Как добраться</h2>
       <div class="map-marker">
-        <img src="img/map.jpg" width="1440" height="418" alt="Наше расположение">
+        <img src="img/map.png" width="1440" height="418" alt="Наше расположение">
         <!-- здесь будет картинка-маркер -->
       </div>
       <div class="map-contacts">
